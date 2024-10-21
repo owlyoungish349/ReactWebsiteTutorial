@@ -1,0 +1,121 @@
+/* General styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header styling */
+.app-header {
+  grid-area: header;
+  text-align: center;
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #61dafb;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+/* Aligning the app container layout */
+.app-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Sidebar styling */
+.app-sidebar {
+  grid-area: sidebar;
+  background-color: #444;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Main content area styling */
+.app-main {
+  grid-area: main;
+  background-color: #444;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #555;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form label {
+  margin-bottom: 5px;
+  color: #ddd;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #61dafb;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #21a1f1;
+}
+
+/* Link styling */
+a {
+  color: #61dafb;
+}
+
+a:hover {
+  text-decoration: underline;
+}
